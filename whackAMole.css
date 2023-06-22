@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin: 20px
+}
+
+button {
+    background-color: lightblue;
+    font-family: 'Ubuntu';
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+
+.gameFrame {
+    width: 50%;
+    height: 80%;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "mole1 mole2 mole3 mole4"
+        "mole5 mole6 mole7 mole8"
+        "mole9 mole10 mole11 mole12";
+}
+
+.mole {
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
+.mole1 {
+    grid-area: mole1;
+}
+
+.mole2 {
+    grid-area: mole2;
+}
+
+.mole3 {
+    grid-area: mole3;
+}
+
+.mole4 {
+    grid-area: mole4;
+}
+
+.mole5 {
+    grid-area: mole5;
+}
+
+.mole6 {
+    grid-area: mole6;
+}
+
+.mole7 {
+    grid-area: mole7;
+}
+
+.mole8 {
+    grid-area: mole8;
+}
+
+.mole9 {
+    grid-area: mole9;
+}
+
+.mole10 {
+    grid-area: mole10;
+}
+
+.mole11 {
+    grid-area: mole11;
+}
+
+.mole12 {
+    grid-area: mole12;
+}
+
+.scoreFrame {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
